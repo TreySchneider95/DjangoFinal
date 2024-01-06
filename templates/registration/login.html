@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Log in{% endblock %}
+{% block content %}
+
+<div class="login_block">
+    <h1 class="login-title">Join Us..!</h1>
+    <div class="login-info-line">
+        <h4>Login / Sign Up</h4>
+    </div>
+    <br>
+    <h4>Log In</h4>
+    <div class="login-signup-box">
+        <form method="post" class="login-box">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Login" class="btn btn-success login">
+        </form>
+        <a href="{% url 'password_reset' %}">Forgot password?</a>
+        <br>
+        <h4>Sign Up</h4>
+        <div class="signup-box">
+            <h7>New User?</h7>
+            <h7 class="signup-join-line">Join and connect with us..!</h7>
+            <a class="btn btn-outline-success login" href="{% url 'signup' %}">Sign Up</a>
+        </div>
+
+
+    </div>
+
+</div>
+
+{% endblock %}

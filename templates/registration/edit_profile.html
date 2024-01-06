@@ -1,0 +1,24 @@
+{% extends 'base.html' %} 
+
+{% block title %}Edit Profile{% endblock title %} 
+
+{% block content %} 
+<h1 class="edit-profile-title">Edit Profile</h1>
+<div class="edit-profile-info-line">
+  <h4>Edit Your Post</h4>
+</div>
+<br>
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Submit" class="btn btn-success edit-submit-btn">
+</form>
+<p>
+  <a href="javascript:history.go(-1)"onMouseOver="self.status.referrer;return true" class="btn btn-outline-secondary">BACK</a>
+  <a href="{% url 'post_list' %}" class="btn btn-outline-secondary">
+    Go to Posts List
+  </a>
+</p>
+<br>
+<br>
+{% endblock content %}

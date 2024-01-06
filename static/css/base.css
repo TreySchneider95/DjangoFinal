@@ -1,0 +1,406 @@
+body {
+  background-image: url('../img/coding-tag-transparent-10-2b.png');
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+h1 {
+  color: rgb(8, 180, 8);
+}
+
+p {
+  margin: 0px;
+}
+
+.notification .badge {
+  /* position: absolute; */
+  top: -19px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  margin-bottom: 5px;
+}
+
+/*========= NavBar =========*/
+
+.container-fluid {
+  color: white;
+  background-color: darkslateblue;
+}
+
+.nav-link {
+  color: white;
+}
+
+.bars-icon {
+  display: block;
+  block-size: 15px;
+}
+
+.navbar-toggler-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  color: white;
+}
+
+.logo {
+  display: block;
+  height: 25px;
+}
+
+.nav-link.active {
+  display: block;
+  margin-left: -10px;
+}
+
+.nav-link:hover{
+  color: white;
+  background-color: darkgreen;
+  cursor: pointer;
+  transform: scale(1.07);
+}
+
+.nav-link.active:hover{
+  color: white;
+  background-color: darkgreen;
+  cursor: pointer;
+  transform: scale(1.07);
+}
+
+.navbar-toggler {
+  border: 0px;
+}
+
+.nav-item-spacer a {
+  color: darkslateblue;
+}
+
+.navbar.navbar-expand-md.bg-black {
+  background-color: black;
+}
+
+
+/*========= Navbar - 'Welcome User =========*/
+
+
+.welcome-user-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: small;
+}
+
+.welcome-user-line-edit-profile {
+  color: white;
+  font-size: xx-small;
+}
+
+.welcome-user-line-edit-profile:hover {
+  color: white;
+  background-color: darkgreen;
+  font-size: xx-small;
+}
+
+
+/*========= Page Titles =========*/
+
+
+.post-list-title-block, .new-post-title, .about-title, .home-in-title, .home-title, .login-title, .log-out-title, .edit-profile-title, .signup-title, .delete-title, .edit-title, .detail-title, .messages-title {
+  margin: 10px 0 10px 0;
+}
+
+
+/*========= Page Info Lines =========*/
+
+
+.home-info-line, .home-in-info-line, .login-info-line, .about-info-line, .messages-info-line, .list-info-line, .searched-page-info-line, .new-info-line, .detail-info-line, .edit-info-line, .edit-profile-info-line, .home-logout-info-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, darkslateblue, rgb(227, 222, 253), rgb(245, 245, 245), rgb(245, 245, 245), rgb(245, 245, 245), rgb(213, 228, 219), darkgreen);
+
+  padding: 5px 70px 0 70px;
+}
+
+
+
+
+
+/*========= Login & SignUp =========*/
+
+
+.login-signup-box {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-width: 290px;
+  border: solid 1px black;
+  padding: 10px;
+  margin: 0 0 5px 0;
+}
+
+.btn.btn-success.login {
+  width: 100%;
+}
+
+.signup-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 290px;
+  border: solid 1px black;
+  padding: 10px;
+}
+
+.signup-join-line {
+  padding: 10px 0 10px 0;
+}
+
+.btn.btn-outline-success.login {
+  width: 100%;
+}
+
+
+/*========= Logout (home_logout) =========*/
+
+
+.home-logout-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  margin: 2px 0 6px 0;
+}
+
+.home-logout-btn-name {
+  color: white;
+}
+
+.home-logout-btn-name:hover {
+  color: white;
+}
+
+.home-logout-btn-message {
+  color: black;
+  margin-left: 10px;
+}
+
+
+/*========= Home (home_in / home) =========*/
+
+
+.home-in-info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: fit-content;
+}
+
+.home-in-btns-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0 0 0;
+  }
+
+.home-in-btn {
+  width: 100%;
+}
+
+.home-in-btn-two {
+  width: 100%;
+  margin: 0 5px 0 5px;
+}
+
+
+/*========= Posts List Page =========*/
+
+
+.post-list-title-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-control.me-2 {
+  width: 300px;
+}
+
+
+/*          Cards (Posts List)          */
+
+
+.card-body {
+  border: solid 1px darkslateblue;
+}
+
+.card-header {
+  border: solid 1px darkslateblue;
+  border-bottom: none;
+}
+
+.after-post-body {
+  margin: 5px 0 0 0;
+}
+
+.post-title-btn {
+  padding-left: 0px;
+  padding-right: 5px;
+}
+
+.post-cat-label {
+  margin-left: 12px;
+}
+
+
+/*========= Searched Post-Cats Page =========*/
+
+
+.search-again-title-and-search-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+
+.search-again-title-and-search-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-again-search-boxes {
+  padding: 5px 0 0 0;
+}
+
+.my-list-searched-cats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-list-cat-label {
+  margin-right: 10px;
+}
+
+.my-list-cats-searched {
+  padding: 10px 0 0 5px;
+}
+
+.search-again-read-choices-and-back-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 6px 0 0 0;
+}
+
+
+/*========= Messages Page =========*/
+
+
+.messages-page-block {
+  display: flex;
+  flex-direction: row;
+  border: solid 2px;
+}
+
+.chatting-with-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatting-with {
+  margin: 0 10px 0 0;
+}
+
+.chatting-with-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 3px;
+}
+
+
+/*========= About Page =========*/
+
+
+.about-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 260px;
+}
+
+
+/*========= Delete Page =========*/
+
+
+.delete-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  margin: 2px 0 6px 15px;
+}
+
+/*========= BTNS (messages, details,etc.) =========*/
+
+
+.messages-title-and-back-btns, .detail-title-and-back-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.messages-back-btns, .detail-back-btns {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0 0 0;
+}
+
+.post-list-to-top-of-page-btn-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+
+.post-list-to-top-of-page-btn {
+width: 200px;
+}
+
+.edit-submit-btn, .signup-submit-btn, .new-post-create-btn {
+  margin: 12px 0 20px 0;
+}
